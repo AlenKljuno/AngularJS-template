@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app = 'app'>
+    <ul>
+        <li><a href="#!home">Home Page</a></li>
+        <li><a href="#!login">Login Page</a></li>
+    </ul>
+    
+    
+<div ng-view ></div>
+    <script src="main.js"></script>
+    <script src="config.js"></script>
+
+    <!--Login Module-->
+    <script src="components/login/login.module.js"></script>
+    <script src="components/login/login.controller.js"></script>
+    <!--Home Module-->
+    <script src="components/home/home.module.js"></script>
+    <script src="components/home/home.controller.js"></script>
+
+    <script src="shared/directive/ag-clock.directive.js"></script>
+    <script src="shared/services/user.service.js"></script>
+    
+</body>
+</html>
